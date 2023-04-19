@@ -15,11 +15,15 @@ CKEDITOR.editorConfig = function( config ) {
 	config.language = 'zh-cn';
 	// config.uiColor = '#AADC6E';
 
+	//增加自定义的更多按钮插件
+	config.allowedContent = true;
+	config.extraPlugins = 'more';
+
 	config.toolbar = [
 		{ name: 'document', items: [ 'Source', '-', 'Save', 'NewPage', 'ExportPdf', 'Preview', 'Print', '-', 'Templates' ] },
 		{ name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
 		{ name: 'editing', items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] },
-		{ name: 'insert', items: [ 'Image', 'CodeSnippet', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe' ] },
+		{ name: 'insert', items: [ 'Image', 'CodeSnippet', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'Iframe', 'more' ] }, //'PageBreak',
 		//{ name: 'forms', items: [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField' ] },
 		'/',
 		{ name: 'basicstyles', items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'CopyFormatting', 'RemoveFormat' ] },

@@ -4,7 +4,7 @@
  * 
  * @package WindsCkEditor
  * @author 小A
- * @version 1.0.0
+ * @version 1.0.1
  * @link http://lijian.net
  */
 class WindsCkEditor_Plugin implements Typecho_Plugin_Interface
