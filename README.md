@@ -25,10 +25,7 @@ github：[https://github.com/awinds/WindsCkEditor](https://github.com/awinds/Win
 
 - 图片上传使用toolbar上`图像`，附件上传使用toolbar上`插入/编辑超链接`，需要在`设置-允许上传的文件类型`中打开上传的类型。  
 
-- v1.0.1增加了自定义按钮插件more，可以点击插入
-    ```$html
-     <p><!--more--></p>
-     ```
+- v1.0.1增加了自定义按钮插件more，可以点击插入<!--more-->，因为在wysiwyg模式下会插入到<p></p>中间，改到只能在Source模式下插入
 
 
 ### 默认配置
