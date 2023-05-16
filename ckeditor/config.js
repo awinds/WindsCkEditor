@@ -16,7 +16,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.uiColor = '#AADC6E';
 
 	//增加自定义的更多按钮插件
-	config.allowedContent = true;
+	//config.allowedContent = true;
 	config.extraPlugins = 'more';
 
 	config.toolbar = [
