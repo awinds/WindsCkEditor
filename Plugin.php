@@ -4,7 +4,7 @@
  * 
  * @package WindsCkEditor
  * @author 小A
- * @version 1.0.1
+ * @version 1.0.2
  * @link http://lijian.net
  */
 class WindsCkEditor_Plugin implements Typecho_Plugin_Interface
@@ -83,8 +83,8 @@ class WindsCkEditor_Plugin implements Typecho_Plugin_Interface
             Typecho.insertFileToEditor = function (file, url, isImage) {
                 var textHtml = isImage ? "<img src='"+url+"' alt='"+file+"' />" : 
                 "<a href='"+ url +"'>" + file + "</a>";
-                if(editor && typeof editor.insertHtml == 'function') {
-                    editor.insertHtml(textHtml);
+                if(windsCkEditor && typeof windsCkEditor.insertHtml == 'function') {
+                    windsCkEditor.insertHtml(textHtml);
                 }
             }
         });
@@ -110,7 +110,7 @@ CODE;
         if ( CKEDITOR.env.ie && CKEDITOR.env.version < 9 ){
 			CKEDITOR.tools.enableHtml5Elements( document );
 		}
-        var editor = CKEDITOR.replace('text', {
+        var windsCkEditor = CKEDITOR.replace('text', {
             language : "zh-cn",
             filebrowserUploadMethod: "form",
             filebrowserUploadUrl : "{$manage}/upload.php?type=Files",
